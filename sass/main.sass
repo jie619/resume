@@ -1,0 +1,307 @@
+
+$width-phone: 480px
+$width-pad: 992px
+
+body
+  font-family: Arial, 'Open Sans', '微軟正黑體', 'Helvetica Neue', Helvetica, sans-serif
+
+.go-top
+  width: 40px
+  height: 40px
+  padding-top: 8px
+  position: fixed
+  bottom: 220px
+  right: 20px
+  z-index: 2000
+  display: none
+  border-radius: 50%
+  text-align: center
+  opacity: 0.7
+  cursor: pointer
+  background: #000
+  color: #fff
+  .glyphicon
+    font-size: 20px
+.go-top:hover
+  opacity: 0.9
+
+
+.section-topbar
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 10000
+  background: #000
+  .dropdown
+    text-align: center
+    .nav
+      margin: auto
+      padding: 0
+      position: relative
+      display: table
+      border-right: 1px solid #222
+      .menu-item
+        padding: 0
+        display: block
+        float: left
+        .smoothScroll
+          padding: 18px 20px 18px 20px
+          display: block
+          font-size: 18px
+          text-decoration: none
+          border-left: 1px solid #222
+          color: #fff
+        .smoothScroll:hover,.smoothScroll:focus
+          background: #222
+     
+
+.headerwrap
+  width: 100%
+  height: 500px
+  margin-top: 61px
+  padding-top: 140px
+  text-align: center
+  background: url(../images/banner.jpg) no-repeat center top
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  .row
+    margin: 0
+  h1
+    font-size: 80px
+    letter-spacing: 10px
+    color: #fff
+  h3 
+    font-size: 20px
+    color: #fff
+@media screen and (max-width: $width-pad)
+  .headerwrap 
+    height: 300px
+    padding-top: 80px
+    background: url(../images/banner.jpg) no-repeat center
+    h1
+      font-size: 50px
+    h3 
+      font-size: 18px
+@media screen and (max-width: $width-phone)
+  .headerwrap
+    .container
+      padding: 0
+      h3 
+        font-size: 16px
+
+
+.about
+  padding: 60px 0
+  background: #2c3e50
+  color: #fff
+  h3
+    margin: 10px 0
+    text-align: center
+  p
+    font-size: 16px
+    letter-spacing: 2px
+    line-height: 1.7
+    text-align: justify
+  .image
+    img
+      height: 160px
+@media screen and (max-width: $width-pad)
+  .about
+    padding: 40px 0
+    .title
+      width: 100%
+      margin-left: 0
+      margin-bottom: 30px
+      h3
+        font-size: 30px
+    .content
+      width: 100%
+      margin-bottom: 30px
+    .image
+      width: 100%
+      text-align: center
+      img
+        width: 280px
+        height: auto
+
+
+.resume
+  background: #fff
+  color: #2f2f2f
+  .container
+    padding: 60px 0
+    border-bottom: 1px solid #ccc
+    .row
+      margin: 0
+    h3
+      margin: 10px 0
+      text-align: center
+    .block
+      margin-bottom: 30px
+    p
+      font-size: 16px
+      t
+        font-size: 20px
+        font-weight: 700
+        color: #34495e
+    .more
+      line-height: 1.7
+      text-align: justify
+      color: #79888A
+    sm
+      font-size: 14px
+      letter-spacing: 2px
+    imp
+      padding: 6px 10px
+      background: #34495e
+      color: #fff
+@media screen and (max-width: $width-pad)
+  .resume
+    .container
+      padding: 40px 20px
+      .title
+        width: 100%
+        margin-left: 0
+        margin-bottom: 30px
+      .content
+        width: calc(100% - 190px)
+        margin-left: 0
+      .date
+        width: 190px
+@media screen and (max-width: $width-phone)
+  .resume
+    .container
+      text-align: center
+      .content
+        width: 100%
+        margin-bottom: 10px
+      .date
+        width: 100%
+        margin-bottom: 40px
+      .date:last-child
+        margin-bottom: 0
+
+
+.skillswrap
+  padding: 60px 0
+  text-align: center
+  background: #2c3e50
+  color: #fff
+  p
+    margin-top: 10px
+    font-size: 18px
+  .centered
+    p
+      margin: 10px 0 50px 0
+      font-size: 18px
+@media screen and (max-width: $width-pad)
+  .skillswrap
+    padding: 40px 0
+    .title
+      width: 100%
+      margin-left: 0
+      margin-bottom: 30px
+    .centered
+      width: 33.3333333333%
+    .canvas
+      width: 33.3333333333%
+      margin-left: 0
+@media screen and (max-width: $width-phone)
+  .skillswrap
+    p
+      margin-bottom: 50px
+    .centered
+      width: 100%
+    .canvas
+      width: 100%
+
+
+.work
+  padding: 60px 0
+  text-align: center
+  .row
+    margin: 0
+  .project
+    position: relative
+    .work-all
+      width: 90%
+      margin: 30px 5%
+      .work-block
+        padding: 0 15px
+        a
+          outline: none
+        img
+          width: 100%
+    .prev,.next
+      width: 30px
+      height: 30px
+      padding-top: 6px
+      position: absolute
+      top: calc(50% - 15px)
+      border-radius: 50%
+      cursor: pointer
+      opacity: 0.5
+      background: #2c3e50
+      color: #fff
+    .prev
+      left: 20px
+    .next
+      right: 20px
+    .prev:hover,.next:hover
+      opacity: 1
+@media screen and (max-width: $width-pad)
+  .work
+    padding: 40px 0
+    .container
+      padding: 0
+    .title
+      width: 100%
+      margin-left: 0
+      margin-bottom: 0
+    .project
+      .work-all
+        width: 100%
+        margin: 30px 0
+        .work-block
+          img
+            width: 400px
+    .prev,.next
+      display: none
+@media screen and (max-width: $width-phone)
+  .work
+    .project
+      .work-all
+        .work-block
+          img
+            width: 250px
+
+
+.footwrap
+  padding-top: 30px
+  padding-bottom: 20px
+  background: #2f2f2f
+  color: #fff
+  h3
+    margin: 10px 0
+    text-align: center
+  p
+    font-size: 16px
+    t
+      font-size: 18px
+      font-weight: 700
+  .content
+    margin-bottom: 40px
+@media screen and (max-width: $width-pad)
+  .footwrap
+    text-align: center
+    .title
+      width: 100%
+      margin-left: 0
+      margin-bottom: 30px
+    .all
+      width: 100%
+
